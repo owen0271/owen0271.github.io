@@ -2,6 +2,7 @@
  * Created by owen0271 on 2016/12/6.
  */
 $(document).ready(function () {
+    alert("hello world");
     $(".image_slider").bxSlider({
         mode: 'fade',
         slideWidth: 1600,
