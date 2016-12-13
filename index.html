@@ -1,28 +1,172 @@
+
+<!-- Created by owen0271 on 2016/12/5. -->
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
+		<title>Wen Wen's Personal Site</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/resume.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/jquery.bxslider.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="javascripts/resume.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
+	
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
+		<nav id="nav_bar" class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="/resume" class="navbar-brand">MY RESUME</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="/resume/gallery">Gallery</a></li>
+					<li><a href="/resume/contact">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
 		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
+			<div id="slide_content" class="row">
+				<div id="slides" class="col-sm-5">
+					<div id="slider" class="image_slider">
+						<div class="slide"><img src="images/resume/IMG_4757.JPG"></div>
+						<div class="slide"><img src="images/resume/chelsea-images.jpg"></div>
+						<div class="slide"><img src="images/resume/winter_is_coming.jpg"></div>
+					</div>
+				</div>
+				<div id="main_content" class="col-sm-7">
+					<div id="summery">
+						<div class="resume_button">
+							<button class="btn btn-info btn-block active">
+								<h4>SUMMERY</h4>
+							</button>
+						</div>
+						<div>
+							<ul>
+								<li>Master of Applied Science (Electrical and Computer Engineering)</li>
+								<li>Bachelor of Engineering (Electrical Engineering major in Microelectronics)</li>
+								<li>CO-OP work experience at BlackBerry (RIM)</li>
+								<li>Knowledge of Computer Networking, Programming, Information Security, and Microelectronics</li>
+								<li>Proficient with various programming languages (C/C++, Python, Java, Matlab, HTML, CSS)</li>
+								<li>Self-motivated; team player; enjoy fast-paced environment; eager to learn</li>
+								<li>Fluent in English and Mandarin</li>
+							</ul>
+						</div>
+					</div>
+					<div id="education">
+						<div class="resume_button">
+							<button class="btn btn-info btn-block active">
+								<h4>EDUCATION BACKGROUND</h4>
+							</button>
+						</div>
+						<div id="education_content" class="collapse_section">
+							<div>
+								<h3>Master of Applied Science</h3>
+							</div>
+							<div>Graduated in Sep.2016 -- GPA 3.78</div>
+							<div>University of Ottawa</div>
+							<div>Wireless Communication Security in WSNs and IoTs</div>
+							<div>
+								<h3>Bachelor of Engineering</h3>
+							</div>
+							<div>Graduated in July.2012 -- GPA 3.27</div>
+							<div>Tianjin University</div>
+							<div>Micro-electronics and Solid State Electronics</div>
+						</div>
+					</div>
+					<div id="working">
+						<div class="resume_button">
+							<button class="btn btn-info btn-block active">
+								<h4>WORKING EXPERIENCE</h4>
+							</button>
+						</div>
+						<div id="working_content" class="collapse_section">
+							<div>
+								<h3>Radio Performance Student</h3>
+							</div>
+							<div>BlackBerry Limited</div>
+							<div>September 2015 - April 2016</div>
+							<div>Ottawa, Ontario, Canada</div>
+							<div>
+								<h4>Responsibilities:</h4>
+								<ul>
+									<li>Conducting various tests related to radio performance and collecting KPIs</li>
+									<li>Automation software programming (in Python) for different test cases or projects</li>
+									<li>Creating parsers for log parsing and analyzing (Python and Java)</li>
+								</ul>
+							</div>
+							<div>
+								<h3>Research Assistant</h3>
+							</div>
+							<div>University of Ottawa</div>
+							<div>September 2015 - April 2016</div>
+							<div>Ottawa, Ontario, Canada</div>
+							<div>
+								<h4>Responsibilities:</h4>
+								<ul>
+									<li>Designing energy efficient schemes of secret sharing and key management</li>
+									<li>Simulating proposed schemes in C for application in WSNs and IoTs</li>
+								</ul>
+							</div>
+							<div>
+								<h3>Teaching Assistant</h3>
+							</div>
+							<div>University of Ottawa</div>
+							<div>September 2015 - April 2016</div>
+							<div>Ottawa, Ontario, Canada</div>
+							<div>
+								<h4>Responsibilities:</h4>
+								<ul>
+									<li>Correcting and marking students’ assignments and lab reports</li>
+									<li>Monitoring and tutoring labs</li>
+									<li>Evaluate the final reports and presentations of the student projects</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="project">
+						<div class="resume_button">
+							<button class="btn btn-info btn-block active">
+								<h4>PROJECTS</h4>
+							</button>
+						</div>
+						<div id="project_content" class="collapse_section">
+							<div>
+								<h3>Industrial IoT Application (Current)</h3>
+							</div>
+							<div>September 2016</div>
+							<div>Responsibility:
+								<ul>
+									<li>Adding security features such as basic symmetric encryption method</li>
+									<li>Implementing key management protocol</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="publication">
+						<div class="resume_button">
+							<button class="btn btn-info btn-block active">
+								<h4>PUBLICATION</h4>
+							</button>
+						</div>
+						<div id="publication_content" class="collapse_section">
+							<div>
+							</div>
+							<div>
+							</div>
+							<div>
+							</div>
+							<div>
+							</div>
+							<div>
+							</div>
+							<div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
